@@ -12,4 +12,3 @@ func main() {
   fmt.Println(diceOne)
   fmt.Println(diceTwo)
 }
-
