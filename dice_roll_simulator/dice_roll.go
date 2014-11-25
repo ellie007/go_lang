@@ -2,16 +2,14 @@ package main
 
 import "fmt"
 import "math/rand"
-import "strconv"
 
 func main() {
-  firstDice := strconv.Itoa(roll_dice)
-  secondDice := strconv.Itoa(roll_dice)
-  fmt.Println("Your 1st roll: " + firstDice)
-  fmt.Println("Your 2nd roll: " + secondDice)
-}
+  var upperBound int = 7
 
-func roll_dice() int {
-  return rand.Intn(6)
+  diceOne := "Your 1st dice roll: " + fmt.Sprintf("%d", rand.Intn(upperBound))
+  diceTwo := "Your 2nd dice roll: " + fmt.Sprintf("%d", rand.Intn(upperBound))
+
+  fmt.Println(diceOne)
+  fmt.Println(diceTwo)
 }
 
